@@ -1,5 +1,9 @@
 # CG Final Hunter Kalinoski
 
+This project demonstrates using webGL to load a 3d model in 3d space. It also includes animations, and an ability to select different meshes.
+
+---
+
 To run the project,
 
 run `npm i` in the root directory to install dependencies (express),
@@ -7,6 +11,10 @@ run `npm i` in the root directory to install dependencies (express),
 then, do `npm run start` to start the server.
 
 Finally, visit localhost:3000 in your browser to view it.
+
+---
+
+A short demonstration can be found at DEMO.mp4
 
 ---
 
