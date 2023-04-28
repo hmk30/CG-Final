@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CG Final</title>
+    <link href="css/labs.css" rel="stylesheet" />
+
+    <!-- import map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "gl_math": "./js/gl_math.js",
+          "gl_shader": "./js/gl_shader.js",
+          "gl_geometry": "./js/gl_geometry.js",
+          "gl_gltf": "./js/gl_gltf.js",
+          "geometries/basic": "./js/geometry_basic.js",
+          "geometries/grid": "./js/geometry_grid.js",
+          "geometries/house": "./js/geometry_house.js",
+          "geometries/tower": "./js/geometry_tower.js",
+          "gl_light": "./js/gl_light.js",
+          "scene_illumination": "./js/scene_illumination.js"
+        }
+      }
+    </script>
+
+    <script defer src="../lib/cuon-matrix.js"></script>
+    <script defer src="../lib/cuon-utils.js"></script>
+    <script defer type="module" src="js/lab10.js"></script>
+  </head>
+  <body onload="main()">
+    <!-- <h1>CG Final</h1> -->
+    <div id="controls">
+      <span>
+        <p>'r' to switch render mode:</p>
+        <p id="render-mode">Full Scene</p>
+      </span>
+      <span>
+        <p>'l' to lock/unlock picking</p>
+        <p id="lock-picking-status">Unlocked</p>
+      </span>
+      <span>
+        <p>'a' to switch animation style</p>
+        <p id="animation-style">Linear</p>
+      </span>
+    </div>
+    <canvas class="webgl" id="canvas_gl" width="1280" height="720"> </canvas>
+  </body>
+</html>
